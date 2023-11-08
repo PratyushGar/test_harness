@@ -1,0 +1,16 @@
+pipeline:
+  name: parentPipelineOtherRepo
+  identifier: parentPipelineOtherRepo
+  projectIdentifier: Pratyush_TestZone
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: childPip
+        identifier: childPip
+        description: ""
+        type: Pipeline
+        spec:
+          org: default
+          pipeline: testChildPipelineRepo1
+          project: Pratyush_TestZone
